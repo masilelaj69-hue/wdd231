@@ -9,12 +9,12 @@
     <meta name="description" content="Apply for Teton Chamber membership and connect your business with local businesses, community events, networking, and business resources.">
     <meta name="author" content="Julia Masilela">
 
+    <link rel="icon" href="images/favicon.svg">
+
     <meta property="og:title" content="Join the Teton Chamber">
     <meta property="og:description" content="Apply for Teton Chamber membership and connect your business with local businesses, community events, networking, and business resources.">
     <meta property="og:image" content="https://masilelaj69-hue.github.io/wdd231-julia/chamber/images/hero.webp">
     <meta property="og:url" content="https://masilelaj69-hue.github.io/wdd231-julia/chamber/join.html">
-
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,32 +31,32 @@
 <body>
 
 <header>
-    <div class="site-header">
-        <div>
-            <p class="site-name">Teton Chamber</p>
-            <p class="tagline">Connecting Businesses &amp; Community</p>
-        </div>
+    <div class="header-content">
+        <a href="index.html" class="logo-link">
+            <strong>Teton Chamber</strong>
+        </a>
 
-        <button id="menu" aria-label="Open navigation menu">☰</button>
+        <button class="menu-button" aria-label="Open navigation menu">☰</button>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
     </div>
-
-    <nav id="navMenu">
-        <a href="index.html">Home</a>
-        <a href="directory.html">Directory</a>
-        <a href="join.html" class="active">Join</a>
-        <a href="discover.html">Discover</a>
-    </nav>
 </header>
 
 <main>
+
     <h1>Join the Teton Chamber</h1>
 
-    <div class="join-layout">
+    <section class="join-section">
 
-        <section class="form-section">
-            <h2>Membership Application</h2>
+        <form method="get" action="thankyou.html" class="join-form">
 
-            <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Membership Application</legend>
 
                 <label for="firstName">
                     First Name
@@ -81,14 +81,14 @@
                 </label>
 
                 <label for="organizationTitle">
-                    Organizational Title
+                    Organization Title
                     <input
                         type="text"
                         id="organizationTitle"
                         name="organizationTitle"
-                        title="Enter your organizational title"
+                        title="Enter your organization title"
                         autocomplete="organization-title"
-                        pattern="[A-Za-z -]{7,}"
+                        pattern="[A-Za-zÀ-ÿ -]{7,}"
                         required>
                 </label>
 
@@ -105,7 +105,7 @@
                 </label>
 
                 <label for="phone">
-                    Mobile Phone Number
+                    Mobile Phone
                     <input
                         type="tel"
                         id="phone"
@@ -116,155 +116,116 @@
                 </label>
 
                 <label for="organization">
-                    Business or Organization Name
+                    Organization Name
                     <input
                         type="text"
                         id="organization"
                         name="organization"
-                        title="Enter your business or organization name"
+                        title="Enter your organization name"
                         autocomplete="organization"
                         required>
                 </label>
 
-                <fieldset>
-                    <legend>Membership Level</legend>
-
-                    <label for="np">
-                        <input
-                            type="radio"
-                            id="np"
-                            name="membership"
-                            value="np"
-                            required>
-                        NP Membership - No Fee
-                    </label>
-
-                    <label for="bronze">
-                        <input
-                            type="radio"
-                            id="bronze"
-                            name="membership"
-                            value="bronze">
-                        Bronze Membership
-                    </label>
-
-                    <label for="silver">
-                        <input
-                            type="radio"
-                            id="silver"
-                            name="membership"
-                            value="silver">
-                        Silver Membership
-                    </label>
-
-                    <label for="gold">
-                        <input
-                            type="radio"
-                            id="gold"
-                            name="membership"
-                            value="gold">
-                        Gold Membership
-                    </label>
-                </fieldset>
+                <label for="membership">
+                    Membership Level
+                    <select
+                        id="membership"
+                        name="membership"
+                        title="Select your membership level"
+                        required>
+                        <option value="" disabled selected>Select a membership level</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
 
                 <label for="description">
-                    Business or Organization Description
+                    Organization Description
                     <textarea
                         id="description"
                         name="description"
-                        title="Describe your business or organization"
-                        rows="5"></textarea>
+                        title="Describe your organization"
+                        autocomplete="off"></textarea>
                 </label>
 
-                <input
-                    type="hidden"
-                    id="timestamp"
-                    name="timestamp">
+                <input type="hidden" id="timestamp" name="timestamp">
 
-                <button type="submit">Apply for Membership</button>
+                <button type="submit" class="submit-button">Submit Application</button>
 
-            </form>
-        </section>
+            </fieldset>
 
-        <section class="membership-section">
-            <h2>Membership Levels</h2>
+        </form>
 
-            <div class="membership-cards">
+        <div class="membership-levels">
 
-                <article class="membership-card">
-                    <h3>NP Membership</h3>
-                    <p>For non-profit organizations.</p>
-                    <strong>No Fee</strong>
-                    <br>
-                    <a href="#npModal" class="modal-link" data-modal="npModal">
-                        More Information
-                    </a>
-                </article>
+            <article class="membership-card">
+                <h2>NP Membership</h2>
+                <p>For nonprofit organizations.</p>
+                <button type="button" class="modal-button" data-modal="npModal">
+                    View Benefits
+                </button>
+            </article>
 
-                <article class="membership-card">
-                    <h3>Bronze Membership</h3>
-                    <p>Basic benefits for growing businesses.</p>
-                    <strong>$100 per year</strong>
-                    <br>
-                    <a href="#bronzeModal" class="modal-link" data-modal="bronzeModal">
-                        More Information
-                    </a>
-                </article>
+            <article class="membership-card">
+                <h2>Bronze Membership</h2>
+                <p>Basic benefits for growing businesses.</p>
+                <button type="button" class="modal-button" data-modal="bronzeModal">
+                    View Benefits
+                </button>
+            </article>
 
-                <article class="membership-card">
-                    <h3>Silver Membership</h3>
-                    <p>Increased visibility and business benefits.</p>
-                    <strong>$250 per year</strong>
-                    <br>
-                    <a href="#silverModal" class="modal-link" data-modal="silverModal">
-                        More Information
-                    </a>
-                </article>
+            <article class="membership-card">
+                <h2>Silver Membership</h2>
+                <p>More visibility and networking opportunities.</p>
+                <button type="button" class="modal-button" data-modal="silverModal">
+                    View Benefits
+                </button>
+            </article>
 
-                <article class="membership-card">
-                    <h3>Gold Membership</h3>
-                    <p>Premium exposure and additional benefits.</p>
-                    <strong>$500 per year</strong>
-                    <br>
-                    <a href="#goldModal" class="modal-link" data-modal="goldModal">
-                        More Information
-                    </a>
-                </article>
+            <article class="membership-card">
+                <h2>Gold Membership</h2>
+                <p>Premium benefits and maximum exposure.</p>
+                <button type="button" class="modal-button" data-modal="goldModal">
+                    View Benefits
+                </button>
+            </article>
 
-            </div>
-        </section>
+        </div>
 
-    </div>
+    </section>
 
     <dialog id="npModal">
         <h2>NP Membership Benefits</h2>
-        <p>NP members receive chamber resources and networking opportunities for nonprofit organizations.</p>
-        <button type="button" class="close-modal">Close</button>
+        <p>Nonprofit organizations can participate in chamber networking events and community activities.</p>
+        <button class="close-modal">Close</button>
     </dialog>
 
     <dialog id="bronzeModal">
         <h2>Bronze Membership Benefits</h2>
-        <p>Bronze members receive basic chamber benefits, networking opportunities, and business resources.</p>
-        <button type="button" class="close-modal">Close</button>
+        <p>Includes networking opportunities, chamber events, and basic business promotion.</p>
+        <button class="close-modal">Close</button>
     </dialog>
 
     <dialog id="silverModal">
         <h2>Silver Membership Benefits</h2>
-        <p>Silver members receive promotional opportunities, networking benefits, and chamber resources.</p>
-        <button type="button" class="close-modal">Close</button>
+        <p>Includes bronze benefits plus increased business promotion and additional networking opportunities.</p>
+        <button class="close-modal">Close</button>
     </dialog>
 
     <dialog id="goldModal">
         <h2>Gold Membership Benefits</h2>
-        <p>Gold members receive premium promotional opportunities, increased visibility, networking, and chamber resources.</p>
-        <button type="button" class="close-modal">Close</button>
+        <p>Includes premium promotion, networking opportunities, event benefits, and maximum chamber visibility.</p>
+        <button class="close-modal">Close</button>
     </dialog>
 
 </main>
 
 <footer>
-    <p>&copy; <span id="currentyear"></span> Teton Chamber | Julia Masilela | South Africa</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
+    <p>Teton Chamber</p>
+    <p>Connecting Businesses &amp; Community</p>
+    <p>Julia Masilela | South Africa</p>
 </footer>
 
 </body>
