@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Join the Teton Chamber of Commerce.">
+    <meta name="author" content="Julia Masilela">
+
+    <title>Join | Teton Chamber</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+            line-height: 1.5;
+        }
+
+        header {
+            background: #16324f;
+            color: white;
+            padding: 1rem;
+        }
+
+        .header-content {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .brand h1 {
+            margin: 0;
+            font-size: 1.7rem;
+        }
+
+        .brand p {
+            margin: 0;
+        }
+
+        .menu-button {
+            float: right;
+            margin-top: -45px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        nav {
+            display: none;
+            clear: both;
+        }
+
+        nav.open {
+            display: block;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0;
+        }
+
+        nav li {
+            margin: 0.5rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a.active {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 1rem;
+        }
+
+        .page-title {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .join-layout {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .form-section,
+        .membership-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .form-section h2,
+        .membership-section h2 {
+            margin-top: 0;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            display: block;
+            width: 100%;
+            margin-top: 0.4rem;
+            padding: 0.75rem;
+            border: 1px solid #777;
+            border-radius: 5px;
+            font: inherit;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: 3px solid #4d90fe;
+        }
+
+        fieldset {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            border: 1px solid #777;
+            border-radius: 5px;
+        }
+
+        fieldset label {
+            font-weight: normal;
+        }
+
+        input[type="radio"] {
+            margin-right: 0.5rem;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 0.9rem;
+            border: none;
+            border-radius: 5px;
+            background: #16324f;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background: #244d70;
+        }
+
+        .membership-cards {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .membership-card {
+            padding: 1.2rem;
+            text-align: center;
+            border: 2px solid #16324f;
+            border-radius: 10px;
+            background: #f9f9f9;
+            animation: cardEntry 0.8s ease-out both;
+        }
+
+        .membership-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .membership-card:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        .membership-card:nth-child(4) {
+            animation-delay: 0.6s;
+        }
+
+        .membership-card h3 {
+            color: #16324f;
+        }
+
+        .modal-button,
+        .close-modal {
+            padding: 0.7rem 1rem;
+            border: none;
+            border-radius: 5px;
+            background: #16324f;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        dialog {
+            max-width: 500px;
+            padding: 2rem;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+        }
+
+        dialog::backdrop {
+            background: rgba(0,0,0,0.55);
+        }
+
+        footer {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            text-align: center;
+            background: #16324f;
+            color: white;
+        }
+
+        footer p {
+            margin: 0.4rem;
+        }
+
+        @keyframes cardEntry {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media screen and (min-width: 700px) {
+
+            .join-layout {
+                grid-template-columns: 1.4fr 1fr;
+                align-items: start;
+            }
+
+            .menu-button {
+                display: none;
+            }
+
+            nav {
+                display: block;
+                float: right;
+                margin-top: -45px;
+                clear: none;
+            }
+
+            nav ul {
+                display: flex;
+                gap: 1.5rem;
+                margin: 0;
+            }
+
+            nav li {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+
+        <div class="brand">
+            <h1>Teton Chamber</h1>
+            <p>Connecting Businesses &amp; Community</p>
+        </div>
+
+        <button
+            id="menu"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <h2 class="page-title">Join the Teton Chamber</h2>
+
+    <div class="join-layout">
+
+        <section class="form-section">
+
+            <h2>Membership Application</h2>
+
+            <form method="get" action="thankyou.html">
+
+                <label>
+                    First Name
+                    <input
+                        type="text"
+                        name="firstName"
+                        title="Enter your first name"
+                        autocomplete="given-name"
+                        required>
+                </label>
+
+                <label>
+                    Last Name
+                    <input
+                        type="text"
+                        name="lastName"
+                        title="Enter your last name"
+                        autocomplete="family-name"
+                        required>
+                </label>
+
+                <label>
+                    Organizational Title
+                    <input
+                        type="text"
+                        name="organizationTitle"
+                        title="Enter your organizational title"
+                        autocomplete="organization-title"
+                        pattern="[A-Za-z -]{7,}"
+                        placeholder="General Manager">
+                </label>
+
+                <label>
+                    Email Address
+                    <input
+                        type="email"
+                        name="email"
+                        title="Enter your email address"
+                        autocomplete="email"
+                        placeholder="example@email.com"
+                        required>
+                </label>
+
+                <label>
+                    Mobile Phone Number
+                    <input
+                        type="tel"
+                        name="phone"
+                        title="Enter your mobile phone number"
+                        autocomplete="tel"
+                        required>
+                </label>
+
+                <label>
+                    Business or Organization Name
+                    <input
+                        type="text"
+                        name="organization"
+                        title="Enter your business or organization name"
+                        autocomplete="organization"
+                        required>
+                </label>
+
+                <fieldset>
+
+                    <legend>Membership Level</legend>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="membership"
+                            value="np"
+                            required>
+                        NP Membership - No Fee
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="membership"
+                            value="bronze">
+                        Bronze Membership
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="membership"
+                            value="silver">
+                        Silver Membership
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="membership"
+                            value="gold">
+                        Gold Membership
+                    </label>
+
+                </fieldset>
+
+                <label>
+                    Business or Organization Description
+                    <textarea
+                        name="description"
+                        title="Describe your business or organization"
+                        rows="6"></textarea>
+                </label>
+
+                <input
+                    type="hidden"
+                    name="timestamp"
+                    id="timestamp">
+
+                <input
+                    type="submit"
+                    value="Apply for Membership"
+                    class="submit-button">
+
+            </form>
+
+        </section>
+
+
+        <section class="membership-section">
+
+            <h2>Membership Levels</h2>
+
+            <div class="membership-cards">
+
+                <article class="membership-card">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations.</p>
+                    <p><strong>No Fee</strong></p>
+
+                    <button
+                        type="button"
+                        class="modal-button"
+                        data-modal="npModal">
+                        More Information
+                    </button>
+                </article>
+
+
+                <article class="membership-card">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic benefits for growing businesses.</p>
+                    <p><strong>$100 per year</strong></p>
+
+                    <button
+                        type="button"
+                        class="modal-button"
+                        data-modal="bronzeModal">
+                        More Information
+                    </button>
+                </article>
+
+
+                <article class="membership-card">
+                    <h3>Silver Membership</h3>
+                    <p>Increased visibility and business benefits.</p>
+                    <p><strong>$250 per year</strong></p>
+
+                    <button
+                        type="button"
+                        class="modal-button"
+                        data-modal="silverModal">
+                        More Information
+                    </button>
+                </article>
+
+
+                <article class="membership-card">
+                    <h3>Gold Membership</h3>
+                    <p>Premium exposure and additional benefits.</p>
+                    <p><strong>$500 per year</strong></p>
+
+                    <button
+                        type="button"
+                        class="modal-button"
+                        data-modal="goldModal">
+                        More Information
+                    </button>
+                </article>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <dialog id="npModal">
+        <h2>NP Membership</h2>
+        <p>For non-profit organizations.</p>
+        <ul>
+            <li>No membership fee</li>
+            <li>Networking opportunities</li>
+            <li>Community events</li>
+            <li>Chamber resources</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+
+    <dialog id="bronzeModal">
+        <h2>Bronze Membership</h2>
+        <p>Benefits for growing businesses.</p>
+        <ul>
+            <li>Business directory listing</li>
+            <li>Networking opportunities</li>
+            <li>Training events</li>
+            <li>Chamber resources</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+
+    <dialog id="silverModal">
+        <h2>Silver Membership</h2>
+        <p>More visibility for your organization.</p>
+        <ul>
+            <li>All Bronze benefits</li>
+            <li>Event discounts</li>
+            <li>Additional training</li>
+            <li>Advertising opportunities</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+
+    <dialog id="goldModal">
+        <h2>Gold Membership</h2>
+        <p>Premium membership benefits.</p>
+        <ul>
+            <li>All Silver benefits</li>
+            <li>Business spotlight</li>
+            <li>Premium advertising</li>
+            <li>Special event discounts</li>
+            <li>Premium networking</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+</main>
+
+<footer>
+
+    <p>
+        &copy; <span id="currentyear"></span>
+        Teton Chamber | Julia Masilela | South Africa
+    </p>
+
+    <p>Last Modified: <span id="lastModified"></span></p>
+
+</footer>
+
+
+<script>
+    // Mobile navigation
+    const menu = document.querySelector("#menu");
+    const nav = document.querySelector("#navMenu");
+
+    menu.addEventListener("click", () => {
+        nav.classList.toggle("open");
+
+        const expanded = nav.classList.contains("open");
+
+        menu.setAttribute("aria-expanded", expanded);
+    });
+
+
+    // Timestamp
+    document.querySelector("#timestamp").value =
+        new Date().toISOString();
+
+
+    // Membership modals
+    document.querySelectorAll(".modal-button").forEach((button) => {
+
+        button.addEventListener("click", () => {
+
+            const modal =
+                document.querySelector(
+                    "#" + button.dataset.modal
+                );
+
+            modal.showModal();
+
+        });
+
+    });
+
+
+    // Close modals
+    document.querySelectorAll(".close-modal").forEach((button) => {
+
+        button.addEventListener("click", () => {
+
+            button.closest("dialog").close();
+
+        });
+
+    });
+
+
+    // Footer year
+    document.querySelector("#currentyear").textContent =
+        new Date().getFullYear();
+
+
+    // Last modified
+    document.querySelector("#lastModified").textContent =
+        document.lastModified;
+</script>
+
+</body>
+</html>

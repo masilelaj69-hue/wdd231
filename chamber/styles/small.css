@@ -1,635 +1,148 @@
-/* ===========================================
-   CSS VARIABLES
-=========================================== */
-
-:root {
-    --primary-color: #0b3d91;
-    --secondary-color: #f4f4f4;
-    --accent-color: #f59e0b;
-    --text-color: #222222;
-    --white: #ffffff;
-    --border-color: #dddddd;
-
-    --heading-font: "Poppins", sans-serif;
-    --body-font: "Open Sans", sans-serif;
-
-    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --border-radius: 10px;
-    --transition: all 0.3s ease;
-}
-
-/* ===========================================
-   GLOBAL STYLES
-=========================================== */
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    font-family: var(--body-font);
-    background: var(--secondary-color);
-    color: var(--text-color);
-    line-height: 1.6;
+    background: #f4f4f4;
+    color: #222;
 }
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-button {
-    font: inherit;
-    cursor: pointer;
-}
-
-/* ===========================================
-   HEADER
-=========================================== */
 
 header {
-    background: var(--primary-color);
-    color: var(--white);
-}
-
-.header-container {
-    max-width: 1200px;
-    margin: auto;
+    background: #16324f;
+    color: white;
     padding: 1rem;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.logo img {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-}
-
-.logo h1 {
+.brand h1 {
     margin: 0;
-    font-family: var(--heading-font);
-    font-size: 1.2rem;
 }
 
-.logo p {
+.brand p {
     margin: 0;
-    font-size: .85rem;
 }
 
-/* ===========================================
-   NAVIGATION
-=========================================== */
-
-#menu-button {
+.menu-button {
     background: none;
     border: none;
-    color: var(--white);
+    color: white;
     font-size: 2rem;
 }
 
 nav {
     display: none;
-    width: 100%;
 }
 
 nav.open {
     display: block;
 }
 
-.navigation {
-    display: flex;
-    flex-direction: column;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.navigation a {
-    display: block;
-    padding: 1rem;
-    text-align: center;
-    transition: var(--transition);
+nav li {
+    margin: 0.5rem 0;
 }
 
-.navigation a:hover {
-    background: rgba(255,255,255,.15);
+nav a {
+    color: white;
+    text-decoration: none;
 }
-
-.active {
-    background: var(--accent-color);
-    color: var(--text-color);
-}
-
-/* ===========================================
-   MAIN
-=========================================== */
 
 main {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
     padding: 1rem;
 }
 
-.page-header {
+.page-title {
     text-align: center;
-    margin-bottom: 2rem;
 }
 
-.page-header h1,
-.page-header h2 {
-    margin-bottom: .5rem;
-    color: var(--primary-color);
-    font-family: var(--heading-font);
-}
-
-/* ===========================================
-   VIEW CONTROLS
-=========================================== */
-
-.view-controls {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.view-controls button {
-    background: var(--primary-color);
-    color: var(--white);
-    border: none;
-    padding: .75rem 1.25rem;
-    border-radius: 6px;
-    transition: var(--transition);
-}
-
-.view-controls button:hover {
-    background: var(--accent-color);
-    transform: translateY(-2px);
-}
-
-/* ===========================================
-   DIRECTORY
-=========================================== */
-
-.grid-view {
-    display: grid;
-    gap: 1.5rem;
-}
-
-.member-card {
-    background: var(--white);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    padding: 1.5rem;
-    text-align: center;
-
-    transition:
-        transform .3s ease,
-        box-shadow .3s ease;
-}
-
-.member-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,.18);
-}
-
-
-.member-card img {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    margin: 0 auto 1rem;
-}
-
-.member-card h3 {
-    margin: 1rem 0 .5rem;
-    color: var(--primary-color);
-    font-family: var(--heading-font);
-}
-
-.member-card p {
-    margin: .5rem 0;
-}
-
-.member-card a {
-    color: var(--primary-color);
-    font-weight: 600;
-}
-
-.member-card a:hover {
-    text-decoration: underline;
-}
-
-/* ===========================================
-   LIST VIEW
-=========================================== */
-
-.list-view {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-/* ===========================================
-   FOOTER
-=========================================== */
-
-footer {
-    margin-top: 3rem;
-    background: var(--primary-color);
-    color: var(--white);
-}
-
-.footer-content {
-    max-width: 1200px;
+.join-container {
+    max-width: 1100px;
     margin: auto;
-    padding: 2rem 1rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-
-    text-align: center;
 }
 
-.footer-content section {
-    width: 100%;
-}
-
-/* ===========================================
-   SOCIAL ICONS
-=========================================== */
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.social-links a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 45px;
-    height: 45px;
-
-    background: rgba(255,255,255,.1);
-    border-radius: 50%;
-
-    transition: var(--transition);
-}
-
-.social-links a:hover {
-    background: var(--accent-color);
-}
-
-.social-links img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-}
-
-/* ===========================================
-   ACCESSIBILITY
-=========================================== */
-
-.visually-hidden {
-    position: absolute;
-    left: -9999px;
-}
-
-/* ===============================
-   SPOTLIGHTS
-=============================== */
-
-.spotlights {
-    margin-top: 3rem;
-}
-
-.spotlight-grid {
-    display: grid;
-    gap: 1.5rem;
-}
-
-.spotlight-grid .member-card {
-    background: #ffffff;
+.join-form,
+.membership-levels {
+    background: white;
     padding: 1.5rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    text-align: center;
-    transition: var(--transition);
-}
-
-.spotlight-grid .member-card:hover {
-    transform: translateY(-8px);
-}
-
-.spotlight-grid img {
-    width: 90px;
-    height: 90px;
-    object-fit: contain;
-    margin: 0 auto 1rem;
-}
-
-/* ===========================
-   JOIN PAGE
-=========================== */
-
-.join-layout {
-    display: grid;
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.join-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
 }
 
 .join-form label {
-    display: flex;
-    flex-direction: column;
-    font-weight: 600;
-    gap: .4rem;
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
 }
 
-.join-form input,
-.join-form select,
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
 .join-form textarea {
-    padding: .75rem;
-    border: 1px solid #ccc;
-    border-radius: .5rem;
-    font-size: 1rem;
-    font-family: inherit;
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.4rem;
 }
 
-.join-form textarea {
-    resize: vertical;
-    min-height: 120px;
+fieldset {
+    margin: 1rem 0;
+    padding: 1rem;
 }
 
-.join-form input[type="submit"] {
-    background: var(--primary-color);
+.submit-button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #16324f;
     color: white;
     border: none;
-    cursor: pointer;
-    padding: .9rem;
-    border-radius: .5rem;
-    font-size: 1rem;
-    transition: background .3s ease;
+    border-radius: 5px;
 }
 
-.join-form input[type="submit"]:hover {
-    background: var(--accent-color);
-    color: var(--text-color);
-}
-
-/* ===========================
-   MEMBERSHIP CARDS
-=========================== */
-
-.membership-cards {
+.membership-levels {
     display: grid;
     gap: 1rem;
 }
 
 .membership-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: .75rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,.1);
-
-    opacity: 0;
-    transform: translateY(30px);
-
-    animation: fadeUp .8s ease forwards;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #777;
+    border-radius: 10px;
+    animation: cardEntry 0.8s ease-out;
 }
 
-.membership-card:nth-child(2) {
-    animation-delay: .2s;
-}
-
-.membership-card:nth-child(3) {
-    animation-delay: .4s;
-}
-
-.membership-card:nth-child(4) {
-    animation-delay: .6s;
-}
-
-.membership-card h3 {
-    color: var(--primary-color);
-}
-
-.membership-card a {
-    display: inline-block;
-    margin-top: 1rem;
-    text-decoration: none;
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
-.membership-card a:hover {
-    color: var(--accent-color);
-}
-
-/* ===========================
-   DIALOGS
-=========================== */
-
-dialog {
-    border: none;
-    border-radius: .75rem;
-    padding: 1.5rem;
-    max-width: 450px;
-    width: 90%;
-}
-
-dialog::backdrop {
-    background: rgba(0,0,0,.5);
-}
-
+.modal-button,
 .close-modal {
-    margin-top: 1rem;
-    background: var(--primary-color);
+    padding: 0.6rem 1rem;
+    background: #16324f;
     color: white;
     border: none;
-    padding: .7rem 1.2rem;
-    border-radius: .5rem;
-    cursor: pointer;
+    border-radius: 5px;
 }
 
-.close-modal:hover {
-    background: var(--accent-color);
-    color: var(--text-color);
-}
-
-/* ===========================
-   THANK YOU PAGE
-=========================== */
-
-.summary-card {
-    background: white;
+dialog {
+    max-width: 500px;
     padding: 2rem;
-    border-radius: .75rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,.1);
 }
 
-.summary-card p {
-    margin: .8rem 0;
+footer {
+    background: #16324f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
 
-/* ===========================
-   ANIMATION
-=========================== */
-
-@keyframes fadeUp {
-
+@keyframes cardEntry {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(20px);
     }
 
     to {
         opacity: 1;
         transform: translateY(0);
     }
-
-}
-
-/* ===========================================
-   DISCOVER PAGE
-=========================================== */
-
-.visitor-message {
-    background: var(--accent-color);
-    color: var(--text-color);
-    padding: 1rem;
-    margin-bottom: 2rem;
-    border-radius: .5rem;
-    text-align: center;
-    font-weight: bold;
-}
-
-.discover-grid {
-    display: grid;
-    gap: 2rem;
-
-    grid-template-areas:
-        "card1"
-        "card2"
-        "card3"
-        "card4"
-        "card5"
-        "card6"
-        "card7"
-        "card8";
-}
-
-.discover-card {
-    background: var(--white);
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    overflow: hidden;
-    padding: 1rem;
-}
-
-.discover-card h2 {
-    color: var(--primary-color);
-    margin-top: 0;
-    font-family: var(--heading-font);
-}
-
-.discover-card figure {
-    margin: 1rem 0;
-}
-
-.discover-card img {
-    width: 100%;
-    height: auto;
-    border-radius: .5rem;
-}
-
-.discover-card address {
-    font-style: normal;
-    font-weight: 600;
-    margin: .75rem 0;
-}
-
-.discover-card p {
-    margin-bottom: 1rem;
-}
-
-.discover-card button {
-    background: var(--primary-color);
-    color: var(--white);
-    border: none;
-    padding: .75rem 1rem;
-    border-radius: .5rem;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.discover-card button:hover {
-    background: var(--accent-color);
-    color: var(--text-color);
-}
-
-/* Named Grid Areas */
-
-.discover-card:nth-child(1) {
-    grid-area: card1;
-}
-
-.discover-card:nth-child(2) {
-    grid-area: card2;
-}
-
-.discover-card:nth-child(3) {
-    grid-area: card3;
-}
-
-.discover-card:nth-child(4) {
-    grid-area: card4;
-}
-
-.discover-card:nth-child(5) {
-    grid-area: card5;
-}
-
-.discover-card:nth-child(6) {
-    grid-area: card6;
-}
-
-.discover-card:nth-child(7) {
-    grid-area: card7;
-}
-
-.discover-card:nth-child(8) {
-    grid-area: card8;
 }
