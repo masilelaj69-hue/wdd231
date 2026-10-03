@@ -1,0 +1,114 @@
+[
+    {
+        "name": "Cape Town",
+        "province": "Western Cape",
+        "category": "city",
+        "description": "A coastal city known for Table Mountain, beautiful beaches, and a vibrant waterfront.",
+        "highlight": "Table Mountain"
+    },
+    {
+        "name": "Kruger National Park",
+        "province": "Limpopo and Mpumalanga",
+        "category": "wildlife",
+        "description": "One of South Africa's famous wildlife destinations with opportunities to see a variety of animals.",
+        "highlight": "Wildlife Safari"
+    },
+    {
+        "name": "Durban",
+        "province": "KwaZulu-Natal",
+        "category": "beach",
+        "description": "A coastal city known for warm weather, beaches, food, and a lively beachfront.",
+        "highlight": "Golden Mile"
+    },
+    {
+        "name": "Johannesburg",
+        "province": "Gauteng",
+        "category": "city",
+        "description": "A major South African city with museums, cultural attractions, shopping, and historical sites.",
+        "highlight": "Apartheid Museum"
+    },
+    {
+        "name": "Blyde River Canyon",
+        "province": "Mpumalanga",
+        "category": "nature",
+        "description": "A spectacular natural landscape featuring cliffs, valleys, viewpoints, and waterfalls.",
+        "highlight": "Three Rondavels"
+    },
+    {
+        "name": "Garden Route",
+        "province": "Western and Eastern Cape",
+        "category": "nature",
+        "description": "A scenic coastal region with forests, beaches, lagoons, mountains, and small towns.",
+        "highlight": "Coastal Scenery"
+    },
+    {
+        "name": "Addo Elephant National Park",
+        "province": "Eastern Cape",
+        "category": "wildlife",
+        "description": "A protected area known for elephants and a variety of other wildlife.",
+        "highlight": "Elephant Viewing"
+    },
+    {
+        "name": "Drakensberg Mountains",
+        "province": "KwaZulu-Natal",
+        "category": "nature",
+        "description": "A mountain region offering dramatic scenery, hiking opportunities, and natural landscapes.",
+        "highlight": "Mountain Hiking"
+    },
+    {
+        "name": "Hermanus",
+        "province": "Western Cape",
+        "category": "beach",
+        "description": "A coastal town famous for ocean views, beaches, and seasonal whale watching.",
+        "highlight": "Whale Watching"
+    },
+    {
+        "name": "Stellenbosch",
+        "province": "Western Cape",
+        "category": "city",
+        "description": "A historic town surrounded by mountains and known for its Cape Dutch architecture and food.",
+        "highlight": "Historic Town"
+    },
+    {
+        "name": "iSimangaliso Wetland Park",
+        "province": "KwaZulu-Natal",
+        "category": "nature",
+        "description": "A diverse protected area featuring wetlands, lakes, coastline, forests, and wildlife.",
+        "highlight": "Wetland Ecosystems"
+    },
+    {
+        "name": "Pilanesberg National Park",
+        "province": "North West",
+        "category": "wildlife",
+        "description": "A wildlife reserve with varied landscapes and opportunities to see many African animals.",
+        "highlight": "Game Drives"
+    },
+    {
+        "name": "Knysna",
+        "province": "Western Cape",
+        "category": "nature",
+        "description": "A scenic coastal town surrounded by forests, a lagoon, and dramatic coastal landscapes.",
+        "highlight": "Knysna Lagoon"
+    },
+    {
+        "name": "Mossel Bay",
+        "province": "Western Cape",
+        "category": "beach",
+        "description": "A coastal destination offering beaches, ocean activities, history, and scenic views.",
+        "highlight": "Santos Beach"
+    },
+    {
+        "name": "Golden Gate Highlands National Park",
+        "province": "Free State",
+        "category": "nature",
+        "description": "A mountain park known for sandstone cliffs, hiking trails, and beautiful landscapes.",
+        "highlight": "Golden Sandstone Cliffs"
+    },
+    {
+        "name": "Mapungubwe National Park",
+        "province": "Limpopo",
+        "category": "wildlife",
+        "description": "A heritage and wildlife destination with archaeological significance and dramatic landscapes.",
+        "highlight": "Mapungubwe Heritage"
+    }
+]

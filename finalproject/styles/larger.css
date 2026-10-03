@@ -1,99 +1,53 @@
-/* =========================================
-   LARGER SCREEN STYLES (768px and above)
-========================================= */
+/* Larger screen styles */
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
 
-    /* ---------- Header ---------- */
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
+    .header-container {
+        padding: 0 1rem;
     }
-
-    #menuBtn {
-        display: none;
-    }
-
-    nav {
-        display: flex !important;
-        width: auto;
-        margin-top: 0;
-        gap: 1rem;
-    }
-
-    nav a {
-        display: inline-block;
-        padding: .75rem 1rem;
-        border-radius: 6px;
-        transition: background-color .3s;
-    }
-
-    nav a:hover {
-        background-color: rgba(255,255,255,.15);
-    }
-
-    /* ---------- Hero ---------- */
 
     .hero {
-        padding: 6rem 2rem;
+        min-height: 560px;
+        padding: 5rem 2rem;
     }
 
-    .hero h2 {
-        font-size: 3rem;
+    .hero-content {
+        max-width: 850px;
     }
 
-    .hero p {
-        font-size: 1.1rem;
+    .intro-section {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
-    /* ---------- Features ---------- */
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (min-width: 1000px) {
+
+    .header-container {
+        padding: 0;
+    }
+
+    .hero {
+        min-height: 620px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
 
     .feature-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* ---------- Strategy Cards ---------- */
-
-    #strategy-container {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
-
-    .strategy-card {
-        transition: transform .3s ease, box-shadow .3s ease;
-    }
-
-    .strategy-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0,0,0,.15);
-    }
-
-    /* ---------- Search ---------- */
-
-    .search-section {
-        text-align: center;
-    }
-
-    .search-section input {
-        width: 400px;
-    }
-
-    /* ---------- Modal ---------- */
-
-    dialog {
-        max-width: 600px;
-    }
-
-    /* ---------- Footer ---------- */
-
-    footer {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1rem;
+    .intro-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 
 }

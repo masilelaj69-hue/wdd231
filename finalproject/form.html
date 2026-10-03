@@ -4,159 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Message Received | TradeWise</title>
+    <title>South Africa Explorer | Contact</title>
 
-    <meta
-        name="description"
-        content="Confirmation page for TradeWise contact form submissions."
-    >
+    <meta name="description" content="Contact South Africa Explorer and share your travel interests, questions, or destination ideas.">
+    <meta name="author" content="Julia Masilela">
 
-    <meta name="author" content="Believe Egwabor">
-
-    <meta property="og:title" content="Message Received | TradeWise">
-    <meta
-        property="og:description"
-        content="Your TradeWise message has been received."
-    >
+    <meta property="og:title" content="South Africa Explorer | Contact">
+    <meta property="og:description" content="Contact South Africa Explorer about South African travel and destinations.">
     <meta property="og:type" content="website">
-    <meta
-        property="og:url"
-        content="https://believeegwabor-creator.github.io/wdd231/finalproject/form.html"
-    >
+    <meta property="og:url" content="https://masilelaj69-hue.github.io/wdd231-julia/finalproject/form.html">
 
     <link rel="icon" href="images/favicon.ico">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
-    <script type="module" src="js/form.js"></script>
+    <script type="module" src="scripts/main.js"></script>
 </head>
 
 <body>
 
-    <header class="site-header">
-        <div class="header-container">
+<header class="site-header">
+    <div class="header-container">
 
-            <a href="index.html" class="logo" aria-label="TradeWise Home">
-                <span class="logo-icon">📊</span>
-                <span>TradeWise</span>
-            </a>
+        <a href="index.html" class="logo">
+            South Africa <span>Explorer</span>
+        </a>
 
-            <button
-                id="menu-button"
-                class="menu-button"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="primary-navigation"
-            >
-                ☰
-            </button>
+        <button
+            id="menu-button"
+            class="menu-button"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
 
-            <nav id="primary-navigation" class="navigation">
-                <a href="index.html">Home</a>
-                <a href="strategies.html">Strategies</a>
-                <a href="resources.html">Resources</a>
-            </nav>
+        <nav class="navigation" id="navigation">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="culture.html">Culture & Food</a>
+        </nav>
 
-        </div>
-    </header>
+    </div>
+</header>
 
-    <main>
+<main>
 
-        <section class="form-result-section">
+    <section class="intro-section">
 
-            <div class="form-result">
+        <div class="section-heading">
+            <p class="eyebrow">GET IN TOUCH</p>
 
-                <p class="eyebrow">MESSAGE RECEIVED</p>
-
-                <h1>Thank You!</h1>
-
-                <p>
-                    Your message has been submitted successfully.
-                    Here is the information you provided:
-                </p>
-
-                <div class="submitted-data">
-
-                    <div class="submitted-item">
-                        <span class="submitted-label">Name</span>
-                        <span id="submitted-name">Loading...</span>
-                    </div>
-
-                    <div class="submitted-item">
-                        <span class="submitted-label">Email</span>
-                        <span id="submitted-email">Loading...</span>
-                    </div>
-
-                    <div class="submitted-item">
-                        <span class="submitted-label">Topic</span>
-                        <span id="submitted-topic">Loading...</span>
-                    </div>
-
-                    <div class="submitted-item">
-                        <span class="submitted-label">Message</span>
-                        <span id="submitted-message">Loading...</span>
-                    </div>
-
-                </div>
-
-                <a href="resources.html" class="button">
-                    Back to Resources
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer class="site-footer">
-
-        <div class="footer-content">
-
-            <div>
-                <h2>TradeWise</h2>
-
-                <p>
-                    A simple educational guide for understanding
-                    trading concepts and strategies.
-                </p>
-            </div>
-
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="strategies.html">Strategies</a>
-                <a href="resources.html">Resources</a>
-                <a href="attributions.html">Attributions</a>
-            </div>
-
-            <div class="footer-video">
-                <a
-                    href="YOUR_VIDEO_LINK_HERE"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Project Demonstration Video
-                </a>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
+            <h1>Contact South Africa Explorer</h1>
 
             <p>
-                &copy; <span id="current-year"></span> TradeWise.
-                All rights reserved.
+                Share your travel interests, questions, or
+                ideas about exploring South Africa.
             </p>
-
-            <p>
-                Last Modified:
-                <span id="lastModified"></span>
-            </p>
-
         </div>
 
-    </footer>
+        <form action="thankyou.html" method="get">
+
+            <div class="feature-card">
+
+                <label for="first-name">
+                    First Name
+                </label>
+
+                <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    required>
+
+                <label for="last-name">
+                    Last Name
+                </label>
+
+                <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    required>
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required>
+
+                <label for="destination">
+                    Destination of Interest
+                </label>
+
+                <select id="destination" name="destination" required>
+                    <option value="">Select a destination</option>
+                    <option value="cape-town">Cape Town</option>
+                    <option value="kruger">Kruger National Park</option>
+                    <option value="durban">Durban</option>
+                    <option value="johannesburg">Johannesburg</option>
+                    <option value="garden-route">Garden Route</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required></textarea>
+
+                <button type="submit" class="button">
+                    Send Message
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <h2>South Africa Explorer</h2>
+
+        <p>
+            Discover destinations, culture, food,
+            wildlife, and experiences across South Africa.
+        </p>
+
+        <div class="footer-links">
+            <a href="attributions.html">Attributions</a>
+            <a href="siteplan.html">Site Plan</a>
+            <a href="form.html">Contact</a>
+            <a href="#" id="video-link">Video Demonstration</a>
+        </div>
+
+        <p class="copyright">
+            © <span id="current-year"></span>
+            South Africa Explorer |
+            Julia Masilela
+        </p>
+
+    </div>
+
+</footer>
 
 </body>
 </html>

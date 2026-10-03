@@ -1,12 +1,13 @@
-import { initNavigation } from "./navigation.js";
-import { loadStrategies } from "./fetch.js";
-import { initModal } from "./modal.js";
+import { setupNavigation } from "./navigation.js";
+import { setupStorage } from "./storage.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    initNavigation();
-    initModal();
+    setupNavigation();
+    setupStorage();
 
-    if (document.querySelector("#strategy-container")) {
-        loadStrategies();
+    const year = document.querySelector("#current-year");
+
+    if (year) {
+        year.textContent = new Date().getFullYear();
     }
 });

@@ -4,227 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Forex Trading Academy | Site Plan</title>
+    <title>South Africa Explorer | Site Plan</title>
 
-    <meta name="description"
-        content="Site plan for the Forex Trading Academy individual website project.">
-
-    <meta name="author" content="Believe Egwabor">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Forex Trading Academy | Site Plan">
-    <meta property="og:description" content="Site plan for the Forex Trading Academy individual website project.">
-    <meta property="og:image" content="https://believeegwabor-creator.github.io/wdd231/finalproject/images/wireframe-desktop.png">
-    <meta property="og:url" content="https://believeegwabor-creator.github.io/wdd231/finalproject/siteplan.html">
+    <meta name="description" content="Site plan for the South Africa Explorer website.">
+    <meta name="author" content="Julia Masilela">
 
     <link rel="icon" href="images/favicon.ico">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
-    <link rel="stylesheet" href="css/siteplan.css">
+    <script type="module" src="scripts/main.js"></script>
 </head>
 
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Forex Trading Academy</h1>
-            <p class="subtitle">Individual Website Project Site Plan</p>
-        </div>
-    </header>
+<header class="site-header">
+    <div class="header-container">
 
-    <main class="container">
+        <a href="index.html" class="logo">
+            South Africa <span>Explorer</span>
+        </a>
 
-        <!-- Site Name -->
-        <section>
-            <h2>1. Site Name</h2>
+        <button
+            id="menu-button"
+            class="menu-button"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
 
-            <h3>Forex Trading Academy</h3>
+        <nav class="navigation" id="navigation">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="culture.html">Culture & Food</a>
+        </nav>
 
-            <p>
-                The name "Forex Trading Academy" was selected because it clearly
-                communicates the purpose of the website. The site is designed to
-                help beginners and intermediate traders learn about forex trading,
-                trading strategies, risk management, and market analysis.
-            </p>
+    </div>
+</header>
 
-            <p>
-                <strong>Proposed domain:</strong>
-                forextradingacademy.org
-            </p>
-        </section>
+<main>
 
-        <!-- Site Purpose -->
-        <section>
-            <h2>2. Site Purpose</h2>
+<section class="intro-section">
 
-            <p>
-                Forex Trading Academy provides a simple educational hub for
-                people who want to learn and improve their understanding of
-                forex trading. The website provides information about trading
-                strategies, risk management, market analysis, trading psychology,
-                and other important forex concepts.
-            </p>
+    <div class="section-heading">
 
-            <p>
-                Visitors can explore different trading strategies, learn the
-                basic concepts behind forex trading, and access useful educational
-                resources to support their trading journey.
-            </p>
-        </section>
+        <p class="eyebrow">WDD231 FINAL PROJECT</p>
 
-        <!-- Target Audience -->
-        <section>
-            <h2>3. Target Audience</h2>
+        <h1>South Africa Explorer Site Plan</h1>
 
-            <p>
-                The primary audience is beginner and intermediate forex traders
-                who want to develop their knowledge and become more disciplined
-                in their approach to trading.
-            </p>
-        </section>
+        <p>
+            A website designed to help visitors discover
+            South African destinations, culture, food,
+            wildlife, and travel experiences.
+        </p>
 
-        <!-- Scenarios -->
-        <section>
-            <h2>4. Scenarios</h2>
-
-            <p>
-                The following questions represent common questions that visitors
-                to the website may have:
-            </p>
-
-            <ul>
-                <li>
-                    What forex trading strategy is suitable for a beginner?
-                </li>
-
-                <li>
-                    How can I manage my risk when trading forex?
-                </li>
-
-                <li>
-                    What currency pairs can I trade?
-                </li>
-
-                <li>
-                    Where can I learn about candlestick patterns and market analysis?
-                </li>
-            </ul>
-        </section>
-
-        <!-- Color Scheme -->
-        <section>
-            <h2>5. Color Scheme</h2>
-
-            <p>
-                The color scheme uses dark blue and green to create a professional
-                financial and educational appearance. Light backgrounds are used
-                to keep the content easy to read.
-            </p>
-
-            <div class="color-grid">
-
-                <div class="color-card">
-                    <div class="color-swatch navy"></div>
-                    <h3>Navy</h3>
-                    <p>#0A2540</p>
-                    <p>Used for headers, navigation, headings, and dark sections.</p>
-                </div>
-
-                <div class="color-card">
-                    <div class="color-swatch green"></div>
-                    <h3>Green</h3>
-                    <p>#16A34A</p>
-                    <p>Used for buttons, links, accents, and positive indicators.</p>
-                </div>
-
-                <div class="color-card">
-                    <div class="color-swatch light"></div>
-                    <h3>Light Gray</h3>
-                    <p>#F8FAFC</p>
-                    <p>Used primarily for page backgrounds and supporting areas.</p>
-                </div>
-
-                <div class="color-card">
-                    <div class="color-swatch white"></div>
-                    <h3>White</h3>
-                    <p>#FFFFFF</p>
-                    <p>Used for cards, content areas, and text on dark backgrounds.</p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Typography -->
-        <section>
-            <h2>6. Typography</h2>
-
-            <div class="font-example">
-                <h3 class="poppins">Poppins</h3>
-
-                <p class="poppins">
-                    Poppins will be used for headings, navigation, buttons,
-                    and major titles.
-                </p>
-            </div>
-
-            <div class="font-example">
-                <h3 class="inter">Inter</h3>
-
-                <p class="inter">
-                    Inter will be used for body text, descriptions, forms,
-                    and other general content.
-                </p>
-            </div>
-        </section>
-
-        <!-- Wireframe -->
-        <section>
-            <h2>7. Wireframes</h2>
-
-            <p>
-                The wireframes show the planned layout of the Forex Trading
-                Academy home page on both small and large screens. The wireframes
-                focus on structure, content placement, navigation, and functionality
-                before detailed styling is applied.
-            </p>
-
-            <div class="wireframes">
-
-    <div class="wireframe">
-        <h3>Small Viewport - Mobile</h3>
-
-        <img
-            src="images/wireframe-mobile.png"
-            alt="Hand-drawn wireframe showing the mobile layout of the Forex Trading Academy home page">
     </div>
 
-    <div class="wireframe">
-        <h3>Large Viewport - Desktop</h3>
+    <div class="feature-grid">
 
-        <img
-            src="images/wireframe-desktop.png"
-            alt="Hand-drawn wireframe showing the desktop layout of the Forex Trading Academy home page">
+        <article class="feature-card">
+            <h2>Site Name</h2>
+            <p><strong>South Africa Explorer</strong></p>
+            <p>
+                The name clearly describes the purpose of
+                the website and focuses on exploring South Africa.
+            </p>
+        </article>
+
+        <article class="feature-card">
+            <h2>Site Purpose</h2>
+            <p>
+                The website provides information about
+                destinations, attractions, culture, food,
+                wildlife, and experiences in South Africa.
+            </p>
+        </article>
+
+        <article class="feature-card">
+            <h2>Scenario 1</h2>
+            <p>
+                What are some interesting places I can visit
+                in South Africa?
+            </p>
+        </article>
+
+        <article class="feature-card">
+            <h2>Scenario 2</h2>
+            <p>
+                What traditional foods and cultural experiences
+                can I discover?
+            </p>
+        </article>
+
+        <article class="feature-card">
+            <h2>Scenario 3</h2>
+            <p>
+                Which destinations are popular for wildlife,
+                beaches, nature, and city experiences?
+            </p>
+        </article>
+
+        <article class="feature-card">
+            <h2>Color Scheme</h2>
+
+            <p>
+                <strong>Deep Green:</strong> #1B5E20
+            </p>
+
+            <p>
+                <strong>Gold:</strong> #D4A017
+            </p>
+
+            <p>
+                <strong>Cream:</strong> #FFF8E7
+            </p>
+
+            <p>
+                Green represents nature and South Africa's
+                landscapes. Gold provides contrast and
+                highlights important buttons and headings.
+            </p>
+        </article>
+
+        <article class="feature-card">
+            <h2>Typography</h2>
+
+            <p>
+                <strong>Poppins</strong> is used for headings,
+                navigation, and important labels.
+            </p>
+
+            <p>
+                <strong>Roboto</strong> is used for body text
+                because it is clean and easy to read.
+            </p>
+        </article>
+
+        <article class="feature-card">
+            <h2>Content</h2>
+
+            <p>
+                The website includes destination information,
+                cultural information, traditional foods,
+                wildlife, nature, and travel experiences.
+            </p>
+
+            <p>
+                Destination data is loaded from a local JSON
+                file using the Fetch API.
+            </p>
+        </article>
+
+        <article class="feature-card">
+            <h2>Testing</h2>
+
+            <p>
+                The website will be tested using W3C validation,
+                PageSpeed Insights/Lighthouse, browser developer
+                tools, responsive screen sizes, accessibility
+                checks, and CSS contrast checking.
+            </p>
+        </article>
+
     </div>
 
-</div>
-        </section>
+</section>
 
-    </main>
+</main>
 
-    <footer>
-        <div class="container">
-            <p>
-                &copy; 2026 Forex Trading Academy | Believe Egwabor
-            </p>
+<footer class="site-footer">
 
-            <p>
-                WDD 231 Individual Website Project
-            </p>
+    <div class="footer-content">
+
+        <h2>South Africa Explorer</h2>
+
+        <p>
+            Discover destinations, culture, food,
+            wildlife, and experiences across South Africa.
+        </p>
+
+        <div class="footer-links">
+            <a href="attributions.html">Attributions</a>
+            <a href="siteplan.html">Site Plan</a>
+            <a href="form.html">Contact</a>
+            <a href="#" id="video-link">Video Demonstration</a>
         </div>
-    </footer>
+
+        <p class="copyright">
+            © <span id="current-year"></span>
+            South Africa Explorer |
+            Julia Masilela
+        </p>
+
+    </div>
+
+</footer>
 
 </body>
 </html>
