@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Teton Chamber of Commerce | Julia Masilela</title>
+
+    <meta name="description"
+        content="Teton Chamber of Commerce connects local businesses and the community through business information, events, news, and opportunities.">
+
+    <meta name="author" content="Julia Masilela">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+        content="Teton Chamber of Commerce">
+
+    <meta property="og:description"
+        content="Connecting businesses and community in Teton, Idaho.">
+
+    <meta property="og:image"
+        content="https://masilelaj69-hue.github.io/wdd231-1/chamber/images/hero.webp">
+
+    <meta property="og:url"
+        content="https://masilelaj69-hue.github.io/wdd231-1/chamber/index.html">
+
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <link rel="stylesheet" href="styles/small.css">
+
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         HEADER
+    =============================== -->
+
+    <header>
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+
+                <img
+                    src="images/hero.webp"
+                    alt="Teton Chamber of Commerce"
+                    width="60"
+                    height="60">
+
+                <div class="logo-text">
+
+                    <h2>Teton Chamber</h2>
+
+                    <p>
+                        Connecting Businesses &amp; Community
+                    </p>
+
+                </div>
+
+            </a>
+
+            <button
+                id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation">
+                ☰
+            </button>
+
+            <nav id="primary-navigation">
+
+                <ul class="navigation">
+
+                    <li>
+                        <a href="index.html" class="active">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="directory.html">
+                            Directory
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="join.html">
+                            Join
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="discover.html">
+                            Discover
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==============================
+         MAIN
+    =============================== -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <img
+                src="images/hero.webp"
+                alt="Teton Idaho landscape"
+                width="1200"
+                height="600">
+
+            <div class="hero-content">
+
+                <h1>
+                    Teton Chamber of Commerce
+                </h1>
+
+                <p>
+                    Connecting local businesses,
+                    organizations, and the Teton community.
+                </p>
+
+                <a href="join.html" class="button">
+                    Join the Chamber
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- WELCOME -->
+
+        <section class="page-header">
+
+            <h2>
+                Welcome to the Teton Chamber
+            </h2>
+
+            <p>
+                The Teton Chamber of Commerce supports local
+                businesses and helps strengthen our community
+                through connection, collaboration, and
+                opportunities for growth.
+            </p>
+
+        </section>
+
+
+        <!-- HOME GRID -->
+
+        <section class="home-grid">
+
+            <!-- EVENTS -->
+
+            <article class="card">
+
+                <h2>
+                    Upcoming Events
+                </h2>
+
+                <p>
+                    Connect with local businesses and community
+                    members at upcoming chamber events.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Business Networking Meeting
+                    </li>
+
+                    <li>
+                        Teton Community Fair
+                    </li>
+
+                    <li>
+                        Local Business Workshop
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+            <!-- NEWS -->
+
+            <article class="card">
+
+                <h2>
+                    Local News
+                </h2>
+
+                <p>
+                    Stay informed about business activities,
+                    community projects, and opportunities
+                    throughout the Teton area.
+                </p>
+
+                <p>
+                    The Teton Chamber is committed to helping
+                    local businesses grow and succeed.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- WEATHER -->
+
+<section class="weather-section">
+
+    <div class="page-header">
+        <h2>Weather</h2>
+        <p>Current weather and the three-day forecast for Teton.</p>
+    </div>
+
+    <div class="weather-grid">
+
+        <article id="current-weather" class="card">
+            <h3>Current Weather</h3>
+            <p>Loading weather...</p>
+        </article>
+
+        <article id="weather-forecast" class="card">
+            <h3>3-Day Forecast</h3>
+            <p>Loading forecast...</p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- BUSINESS SPOTLIGHTS -->
+
+        <section>
+
+            <div class="page-header">
+
+                <h2>
+                    Business Spotlights
+                </h2>
+
+                <p>
+                    Discover some of the businesses that help
+                    make the Teton community strong.
+                </p>
+
+            </div>
+
+
+            <div class="spotlight-grid">
+
+                <article class="member-card">
+
+                    <img
+                        src="images/bussiness1.webp"
+                        alt="Teton Valley Realty"
+                        loading="lazy"
+                        width="180"
+                        height="180">
+
+                    <h3>
+                        Teton Valley Realty
+                    </h3>
+
+                    <p>
+                        Helping families and businesses find
+                        properties in the Teton area.
+                    </p>
+
+                </article>
+
+
+                <article class="member-card">
+
+                    <img
+                        src="images/bussiness2.webp"
+                        alt="Teton Mountain Bank"
+                        loading="lazy"
+                        width="180"
+                        height="180">
+
+                    <h3>
+                        Teton Mountain Bank
+                    </h3>
+
+                    <p>
+                        Providing financial services to local
+                        individuals and businesses.
+                    </p>
+
+                </article>
+
+
+                <article class="member-card">
+
+                    <img
+                        src="images/bussiness3.webp"
+                        alt="Teton Outdoor Adventures"
+                        loading="lazy"
+                        width="180"
+                        height="180">
+
+                    <h3>
+                        Teton Outdoor Adventures
+                    </h3>
+
+                    <p>
+                        Helping visitors and residents enjoy
+                        outdoor activities in the Teton area.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CALL TO ACTION -->
+
+        <section class="page-header">
+
+            <h2>
+                Become a Chamber Member
+            </h2>
+
+            <p>
+                Join the Teton Chamber of Commerce and connect
+                with other local businesses and community
+                members.
+            </p>
+
+            <a href="join.html" class="button">
+                Become a Member
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <section>
+
+                <h3>
+                    Teton Chamber of Commerce
+                </h3>
+
+                <p>
+                    Teton, Idaho
+                </p>
+
+                <p>
+                    info@tetonchamber.org
+                </p>
+
+                <p>
+                    208-555-0100
+                </p>
+
+            </section>
+
+
+            <section class="social-links">
+
+                <a
+                    href="#"
+                    aria-label="Facebook">
+
+                    <span>Facebook</span>
+
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="Instagram">
+
+                    <span>Instagram</span>
+
+                </a>
+
+                <a
+                    href="#"
+                    aria-label="LinkedIn">
+
+                    <span>LinkedIn</span>
+
+                </a>
+
+            </section>
+
+
+            <section>
+
+                <p>
+                    &copy;
+                    <span id="current-year"></span>
+                    Julia Masilela
+                </p>
+
+                <p>
+                    WDD 231
+                </p>
+
+                <p id="last-modified"></p>
+
+            </section>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script
+        src="scripts/navigation.js"
+        defer>
+    </script>
+
+<script src="scripts/home.js" defer></script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>South Africa Explorer | Destinations</title>
+
+    <meta name="description" content="Explore popular destinations in South Africa including cities, beaches, mountains, wildlife areas, and natural attractions.">
+    <meta name="author" content="Julia Masilela">
+
+    <meta property="og:title" content="South Africa Explorer | Destinations">
+    <meta property="og:description" content="Explore interesting destinations and attractions across South Africa.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://masilelaj69-hue.github.io/wdd231-julia/finalproject/destinations.html">
+    <meta property="og:image" content="images/south-africa.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/destinations.js"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            South Africa <span>Explorer</span>
+        </a>
+
+        <button
+            id="menu-button"
+            class="menu-button"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navigation" id="navigation">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="destinations.html" class="active">
+                Destinations
+            </a>
+
+            <a href="culture.html">
+                Culture & Food
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="intro-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                EXPLORE SOUTH AFRICA
+            </p>
+
+            <h1>
+                Destinations
+            </h1>
+
+            <p>
+                Discover cities, beaches, mountains, wildlife
+                areas, and other places to explore across
+                South Africa.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="intro-section">
+
+        <div class="section-heading">
+
+            <h2>
+                Find a Destination
+            </h2>
+
+            <label for="category-filter">
+                Filter by type:
+            </label>
+
+            <select id="category-filter">
+
+                <option value="all">
+                    All Destinations
+                </option>
+
+                <option value="city">
+                    Cities
+                </option>
+
+                <option value="nature">
+                    Nature
+                </option>
+
+                <option value="wildlife">
+                    Wildlife
+                </option>
+
+                <option value="beach">
+                    Beaches
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+    <section class="intro-section">
+
+        <div
+            id="destination-container"
+            class="feature-grid"
+            aria-live="polite">
+
+            <p>
+                Loading destinations...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <dialog id="destination-modal">
+
+        <div class="modal-content">
+
+            <button
+                id="close-modal"
+                class="modal-close"
+                aria-label="Close destination details">
+                ×
+            </button>
+
+            <div id="modal-content">
+
+                <p>
+                    Select a destination to learn more.
+                </p>
+
+            </div>
+
+        </div>
+
+    </dialog>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <h2>
+            South Africa Explorer
+        </h2>
+
+        <p>
+            Discover destinations, culture, food,
+            wildlife, and experiences across
+            South Africa.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="attributions.html">
+                Attributions
+            </a>
+
+            <a href="siteplan.html">
+                Site Plan
+            </a>
+
+            <a href="form.html">
+                Contact
+            </a>
+
+            <a href="#" id="video-link">
+                Video Demonstration
+            </a>
+
+        </div>
+
+        <p class="copyright">
+
+            © <span id="current-year"></span>
+            South Africa Explorer |
+            Julia Masilela
+
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

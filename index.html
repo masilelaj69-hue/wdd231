@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Julia Masilela's WDD231 Web Development homepage">
+
+    <meta name="author" content="Julia Masilela">
+
+    <title>Julia Masilela | WDD231</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="profile">
+            <img src="images/profile.png" alt="Profile photo of Julia Masilela">
+            <h1>Julia Masilela</h1>
+        </div>
+
+        <button id="menu"
+            class="menu-button"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <ul id="nav-list">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About Me</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Home</h1>
+
+        <section class="about-section card">
+
+            <h2>About Me</h2>
+
+            <p>
+                Hello! My name is <strong>Julia Masilela</strong>.
+                I am currently studying Web Development at BYU–Idaho.
+                I enjoy learning about web development, programming,
+                and creating websites that are useful, accessible,
+                and easy to use.
+            </p>
+
+            <p>
+                I am continuously developing my technical skills and
+                gaining experience with HTML, CSS, JavaScript,
+                Git, and GitHub.
+            </p>
+
+        </section>
+
+        <section class="student-section card">
+
+            <h2>Student Profile</h2>
+
+            <div class="student-profile">
+
+                <img src="images/profile.png"
+                    alt="Julia Masilela student profile photo">
+
+                <div>
+                    <h3>Julia Masilela</h3>
+
+                    <p>Web Development Student</p>
+
+                    <p>BYU–Idaho</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="certificate-section card">
+
+            <h2>Web and Computer Programming Certificate</h2>
+
+            <div class="course-buttons">
+
+                <button id="allButton" type="button">
+                    All Courses
+                </button>
+
+                <button id="wddButton" type="button">
+                    WDD Courses
+                </button>
+
+                <button id="cseButton" type="button">
+                    CSE Courses
+                </button>
+
+            </div>
+
+            <div id="courseContainer"></div>
+
+            <p id="creditDisplay">
+                Total Credits: 0
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="social-links">
+
+            <a href="https://github.com/masilelaj69-hue"
+                target="_blank"
+                rel="noopener"
+                aria-label="Julia Masilela GitHub profile">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Julia Masilela LinkedIn profile">
+                LinkedIn
+            </a>
+
+        </div>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Julia Masilela | South Africa
+        </p>
+
+        <p id="lastModified">
+            Last Modified:
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

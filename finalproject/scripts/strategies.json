@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "name": "Price Action",
+    "category": "Technical Analysis",
+    "timeframe": "Any",
+    "risk": "Medium",
+    "difficulty": "Beginner",
+    "description": "A method of analyzing market movement by studying price behavior and chart patterns."
+  },
+  {
+    "id": 2,
+    "name": "Support and Resistance",
+    "category": "Technical Analysis",
+    "timeframe": "Any",
+    "risk": "Medium",
+    "difficulty": "Beginner",
+    "description": "Identifies important price areas where buying or selling pressure may appear."
+  },
+  {
+    "id": 3,
+    "name": "Breakout Trading",
+    "category": "Trading Strategy",
+    "timeframe": "1H–Daily",
+    "risk": "High",
+    "difficulty": "Intermediate",
+    "description": "Looks for price to move beyond an established support or resistance level."
+  },
+  {
+    "id": 4,
+    "name": "Trend Following",
+    "category": "Trading Strategy",
+    "timeframe": "4H–Daily",
+    "risk": "Medium",
+    "difficulty": "Beginner",
+    "description": "Attempts to participate in an established market trend rather than predict reversals."
+  },
+  {
+    "id": 5,
+    "name": "Swing Trading",
+    "category": "Trading Style",
+    "timeframe": "4H–Weekly",
+    "risk": "Medium",
+    "difficulty": "Intermediate",
+    "description": "Holds positions for several days or weeks to capture larger price movements."
+  },
+  {
+    "id": 6,
+    "name": "Day Trading",
+    "category": "Trading Style",
+    "timeframe": "5M–4H",
+    "risk": "High",
+    "difficulty": "Intermediate",
+    "description": "Opens and closes trades within the same trading day."
+  },
+  {
+    "id": 7,
+    "name": "Scalping",
+    "category": "Trading Style",
+    "timeframe": "1M–15M",
+    "risk": "High",
+    "difficulty": "Advanced",
+    "description": "Uses short-term market movements to seek small price gains."
+  },
+  {
+    "id": 8,
+    "name": "Moving Average Strategy",
+    "category": "Technical Analysis",
+    "timeframe": "1H–Daily",
+    "risk": "Medium",
+    "difficulty": "Beginner",
+    "description": "Uses moving averages to identify trends and potential changes in market direction."
+  },
+  {
+    "id": 9,
+    "name": "Fibonacci Retracement",
+    "category": "Technical Analysis",
+    "timeframe": "1H–Daily",
+    "risk": "Medium",
+    "difficulty": "Intermediate",
+    "description": "Uses Fibonacci levels to identify potential areas where price may retrace."
+  },
+  {
+    "id": 10,
+    "name": "Fair Value Gap",
+    "category": "Smart Money Concepts",
+    "timeframe": "15M–Daily",
+    "risk": "High",
+    "difficulty": "Intermediate",
+    "description": "Identifies areas of inefficient price movement that may later be revisited."
+  },
+  {
+    "id": 11,
+    "name": "Liquidity Trading",
+    "category": "Smart Money Concepts",
+    "timeframe": "15M–Daily",
+    "risk": "High",
+    "difficulty": "Advanced",
+    "description": "Studies areas where significant concentrations of orders may exist around market highs and lows."
+  },
+  {
+    "id": 12,
+    "name": "Order Blocks",
+    "category": "Smart Money Concepts",
+    "timeframe": "1H–Daily",
+    "risk": "High",
+    "difficulty": "Advanced",
+    "description": "Analyzes areas associated with significant institutional buying or selling activity."
+  },
+  {
+    "id": 13,
+    "name": "Break of Structure",
+    "category": "Market Structure",
+    "timeframe": "15M–Daily",
+    "risk": "Medium",
+    "difficulty": "Intermediate",
+    "description": "Uses changes in swing highs and lows to identify potential changes in market structure."
+  },
+  {
+    "id": 14,
+    "name": "Candle Range Theory",
+    "category": "Price Action",
+    "timeframe": "Daily–4H",
+    "risk": "Medium",
+    "difficulty": "Intermediate",
+    "description": "Studies the relationship between candle ranges, liquidity, and subsequent price movement."
+  },
+  {
+    "id": 15,
+    "name": "Risk-to-Reward Planning",
+    "category": "Risk Management",
+    "timeframe": "Any",
+    "risk": "Low",
+    "difficulty": "Beginner",
+    "description": "Compares the potential reward of a trade with the amount being risked."
+  },
+  {
+    "id": 16,
+    "name": "Position Sizing",
+    "category": "Risk Management",
+    "timeframe": "Any",
+    "risk": "Low",
+    "difficulty": "Beginner",
+    "description": "Determines an appropriate trade size based on account balance, stop loss, and risk percentage."
+  },
+  {
+    "id": 17,
+    "name": "Stop Loss Management",
+    "category": "Risk Management",
+    "timeframe": "Any",
+    "risk": "Low",
+    "difficulty": "Beginner",
+    "description": "Uses predefined exit levels to help limit potential losses on a trade."
+  },
+  {
+    "id": 18,
+    "name": "Multi-Timeframe Analysis",
+    "category": "Market Analysis",
+    "timeframe": "15M–Daily",
+    "risk": "Medium",
+    "difficulty": "Intermediate",
+    "description": "Combines multiple chart timeframes to build a broader view of market direction."
+  }
+]

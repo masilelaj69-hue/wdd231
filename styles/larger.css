@@ -1,0 +1,82 @@
+/* =========================
+   LARGE SCREEN
+========================= */
+
+@media screen and (min-width: 700px) {
+
+    /* Hide hamburger on desktop */
+    .menu-button {
+        display: none;
+    }
+
+    /* Show navigation */
+    nav {
+        display: block;
+        background-color: #111827;
+        margin: 1rem -1rem -1rem;
+    }
+
+    nav ul {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav a {
+        padding: 1rem 1.5rem;
+    }
+
+    /* Main */
+    main {
+        padding: 2rem;
+    }
+
+    /* Student profile */
+    .student-profile {
+        flex-direction: row;
+        text-align: left;
+        justify-content: center;
+    }
+
+    /* Course buttons */
+    .course-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .course-buttons button {
+        min-width: 150px;
+    }
+
+    /* Course cards */
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Footer */
+    footer {
+        padding: 2rem;
+    }
+}
+
+
+/* =========================
+   EXTRA LARGE SCREEN
+========================= */
+
+@media screen and (min-width: 1000px) {
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

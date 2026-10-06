@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Price Action",
+    "category": "Technical Analysis",
+    "timeframe": "1H - Daily",
+    "risk": "Medium",
+    "difficulty": "Beginner",
+    "description": "Trade using pure price movement without relying on indicators. Focus on candlestick patterns, market structure, and key support and resistance levels."
+  },
+  {
+    "id": 2,
+    "name": "Breakout Trading",
+    "category": "Momentum",
+    "timeframe": "15M - 4H",
+    "risk": "High",
+    "difficulty": "Intermediate",
+    "description": "Enter trades when price breaks above resistance or below support with strong momentum."
+  },
+  {
+    "id": 3,
+    "name": "Scalping",
+    "category": "Short-Term",
+    "timeframe": "1M - 5M",
+    "risk": "High",
+    "difficulty": "Advanced",
+    "description": "Take many small trades throughout the day to capture quick market movements."
+  },
+  {
+    "id": 4,
+    "name": "Swing Trading",
+    "category": "Trend",
+    "timeframe": "4H - Daily",
+    "risk": "Medium",
+    "difficulty": "Beginner",
+    "description": "Hold positions for several days to benefit from medium-term price swings."
+  },
+  {
+    "id": 5,
+    "name": "Position Trading",
+    "category": "Long-Term",
+    "timeframe": "Daily - Weekly",
+    "risk": "Low",
+    "difficulty": "Intermediate",
+    "description": "Trade long-term trends based on technical and fundamental analysis."
+  },
+  {
+    "id": 6,
+    "name": "Trend Following",
+    "category": "Technical Analysis",
+    "timeframe": "1H - Daily",
+    "risk": "Medium",
+    "difficulty": "Beginner",
+    "description": "Identify the market trend and trade only in its direction."
+  },
+  {
+    "id": 7,
+    "name": "Range Trading",
+    "category": "Technical Analysis",
+    "timeframe": "15M - 1H",
+    "risk": "Low",
+    "difficulty": "Beginner",
+    "description": "Buy near support and sell near resistance while the market moves sideways."
+  },
+  {
+    "id": 8,
+    "name": "Supply and Demand",
+    "category": "Smart Money",
+    "timeframe": "1H - Daily",
+    "risk": "Medium",
+    "difficulty": "Intermediate",
+    "description": "Use institutional buying and selling zones to identify high-probability trade setups."
+  },
+  {
+    "id": 9,
+    "name": "Support and Resistance",
+    "category": "Technical Analysis",
+    "timeframe": "15M - Daily",
+    "risk": "Low",
+    "difficulty": "Beginner",
+    "description": "Trade around key price levels where buying and selling pressure repeatedly appears."
+  },
+  {
+    "id": 10,
+    "name": "Moving Average Crossover",
+    "category": "Indicators",
+    "timeframe": "30M - Daily",
+    "risk": "Medium",
+    "difficulty": "Beginner",
+    "description": "Generate buy and sell signals when moving averages cross."
+  },
+  {
+    "id": 11,
+    "name": "Fibonacci Retracement",
+    "category": "Technical Analysis",
+    "timeframe": "1H - Daily",
+    "risk": "Medium",
+    "difficulty": "Intermediate",
+    "description": "Use Fibonacci levels to find pullback entries in trending markets."
+  },
+  {
+    "id": 12,
+    "name": "News Trading",
+    "category": "Fundamental Analysis",
+    "timeframe": "5M - 1H",
+    "risk": "High",
+    "difficulty": "Advanced",
+    "description": "Trade market volatility during major economic announcements."
+  },
+  {
+    "id": 13,
+    "name": "ICT Concepts",
+    "category": "Smart Money",
+    "timeframe": "15M - Daily",
+    "risk": "High",
+    "difficulty": "Advanced",
+    "description": "Apply liquidity concepts, fair value gaps, and market structure shifts to trading."
+  },
+  {
+    "id": 14,
+    "name": "Smart Money Concepts",
+    "category": "Institutional Trading",
+    "timeframe": "15M - Daily",
+    "risk": "High",
+    "difficulty": "Advanced",
+    "description": "Trade using order blocks, liquidity sweeps, and institutional order flow."
+  },
+  {
+    "id": 15,
+    "name": "Momentum Trading",
+    "category": "Momentum",
+    "timeframe": "15M - 4H",
+    "risk": "Medium",
+    "difficulty": "Intermediate",
+    "description": "Follow strong market momentum and enter trades with the prevailing move."
+  }
+]

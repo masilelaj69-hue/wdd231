@@ -1,0 +1,53 @@
+/* Larger screen styles */
+
+@media (min-width: 700px) {
+
+    .header-container {
+        padding: 0 1rem;
+    }
+
+    .hero {
+        min-height: 560px;
+        padding: 5rem 2rem;
+    }
+
+    .hero-content {
+        max-width: 850px;
+    }
+
+    .intro-section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (min-width: 1000px) {
+
+    .header-container {
+        padding: 0;
+    }
+
+    .hero {
+        min-height: 620px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .intro-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+}

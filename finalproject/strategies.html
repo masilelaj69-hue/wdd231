@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forex Trading Academy | Trading Strategies</title>
+
+    <meta
+        name="description"
+        content="Explore forex trading strategies, including price action, smart money concepts, risk management, and technical analysis."
+    >
+
+    <meta name="author" content="Believe Egwabor">
+
+    <!-- Open Graph -->
+    <meta
+        property="og:title"
+        content="Forex Trading Academy | Trading Strategies"
+    >
+
+    <meta
+        property="og:description"
+        content="Explore forex trading strategies and learn about technical analysis, market structure, smart money concepts, and risk management."
+    >
+
+    <meta
+        property="og:url"
+        content="https://believeegwabor-creator.github.io/wdd231/finalproject/strategies.html"
+    >
+
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    [<link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">📈</span>
+
+                <div class="logo-text">
+                    <strong>Forex Trading Academy</strong>
+                    <span>Learn. Practice. Trade.</span>
+                </div>
+
+            </a>
+
+            <button
+                id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="primary-navigation"
+            >
+                ☰
+            </button>
+
+            <nav id="primary-navigation">
+
+                <ul class="navigation">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="strategies.html"
+                            class="active"
+                        >
+                            Strategies
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="resources.html">
+                            Resources
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+
+            <div class="section-heading">
+
+                <h1>Forex Trading Strategies</h1>
+
+                <p>
+                    Explore different trading strategies and learn how
+                    traders analyze the forex market.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SEARCH -->
+        <section class="strategy-search">
+
+            <label for="search">
+                Search Trading Strategies
+            </label>
+
+            <input
+                type="search"
+                id="search"
+                name="search"
+                placeholder="Search by strategy or category..."
+                autocomplete="off"
+            >
+
+        </section>
+
+
+        <!-- STRATEGIES -->
+        <section class="strategies-section">
+
+            <div class="section-heading">
+
+                <h2>Trading Strategies</h2>
+
+                <p>
+                    Select a strategy to learn more about it.
+                </p>
+
+            </div>
+
+            <!-- JavaScript will generate the strategy cards here -->
+            <div
+                id="strategy-container"
+                class="strategy-grid"
+            ></div>
+
+        </section>
+
+
+        <!-- LEARNING SECTION -->
+        <section class="trading-plan-section">
+
+            <div class="section-heading">
+
+                <h2>Keep Learning</h2>
+
+                <p>
+                    Successful trading requires knowledge,
+                    discipline, risk management, and consistent practice.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <h2>Forex Trading Academy</h2>
+
+                <p>
+                    An educational resource for learning about
+                    forex trading, strategies, risk management,
+                    and trading psychology.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h2>Quick Links</h2>
+
+                <div class="footer-links">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="strategies.html">
+                        Strategies
+                    </a>
+
+                    <a href="resources.html">
+                        Resources
+                    </a>
+
+                    <a href="attributions.html">
+                        Attributions
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-video">
+
+                <h2>Project Video</h2>
+
+                <p>
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        JavaScript Demonstration
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="current-year">2026</span>
+                Forex Trading Academy
+            </p>
+
+            <p>
+                WDD 231
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- MODAL -->
+    <dialog id="strategy-modal">
+
+        <div class="modal-content">
+
+            <button
+                id="close-modal"
+                class="close-modal"
+                aria-label="Close strategy details"
+            >
+                ×
+            </button>
+
+            <h2 id="modal-title"></h2>
+
+            <p>
+                <strong>Category:</strong>
+                <span id="modal-category"></span>
+            </p>
+
+            <p>
+                <strong>Timeframe:</strong>
+                <span id="modal-timeframe"></span>
+            </p>
+
+            <p>
+                <strong>Risk:</strong>
+                <span id="modal-risk"></span>
+            </p>
+
+            <p>
+                <strong>Difficulty:</strong>
+                <span id="modal-difficulty"></span>
+            </p>
+
+            <p id="modal-description"></p>
+
+        </div>
+
+    </dialog>
+
+
+    <!-- JAVASCRIPT -->
+    <script type="module" src="scripts/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Teton Valley Realty",
+    "address": "120 Main Street, Teton, Idaho",
+    "phone": "208-555-0101",
+    "website": "https://example.com",
+    "image": "bussiness1.webp",
+    "membership": 3,
+    "industry": "Real Estate",
+    "description": "A local real estate company helping families and businesses find properties in the Teton area.",
+    "email": "info@tetonvalleyrealty.com"
+  },
+  {
+    "id": 2,
+    "name": "Teton Mountain Bank",
+    "address": "45 Main Street, Teton, Idaho",
+    "phone": "208-555-0102",
+    "website": "https://example.com",
+    "image": "bussiness2.webp",
+    "membership": 3,
+    "industry": "Banking",
+    "description": "A community-focused bank providing financial services to individuals and local businesses.",
+    "email": "info@tetonmountainbank.com"
+  },
+  {
+    "id": 3,
+    "name": "Teton Outdoor Adventures",
+    "address": "18 River Road, Teton, Idaho",
+    "phone": "208-555-0103",
+    "website": "https://example.com",
+    "image": "bussiness3.webp",
+    "membership": 2,
+    "industry": "Tourism",
+    "description": "Outdoor recreation company offering visitors opportunities to explore the Teton area.",
+    "email": "info@tetonoutdooradventures.com"
+  },
+  {
+    "id": 4,
+    "name": "Teton Family Dental",
+    "address": "75 Market Street, Teton, Idaho",
+    "phone": "208-555-0104",
+    "website": "https://example.com",
+    "image": "bussiness4.webp",
+    "membership": 2,
+    "industry": "Healthcare",
+    "description": "A local dental practice providing professional dental care for families and individuals.",
+    "email": "info@tetonfamilydental.com"
+  },
+  {
+    "id": 5,
+    "name": "Teton Coffee House",
+    "address": "22 Center Street, Teton, Idaho",
+    "phone": "208-555-0105",
+    "website": "https://example.com",
+    "image": "bussiness5.webp",
+    "membership": 2,
+    "industry": "Food and Beverage",
+    "description": "A local coffee shop serving coffee, pastries, and refreshments to the community.",
+    "email": "hello@tetoncoffeehouse.com"
+  },
+  {
+    "id": 6,
+    "name": "Teton Construction Group",
+    "address": "310 Industrial Road, Teton, Idaho",
+    "phone": "208-555-0106",
+    "website": "https://example.com",
+    "image": "bussiness6.webp",
+    "membership": 1,
+    "industry": "Construction",
+    "description": "A local construction company serving residential and commercial customers in the Teton area.",
+    "email": "info@tetonconstruction.com"
+  },
+  {
+    "id": 7,
+    "name": "Teton Valley Market",
+    "address": "90 Main Street, Teton, Idaho",
+    "phone": "208-555-0107",
+    "website": "https://example.com",
+    "image": "hero.webp",
+    "membership": 1,
+    "industry": "Retail",
+    "description": "A community market providing groceries and everyday products to local residents.",
+    "email": "info@tetonvalleymarket.com"
+  }
+]

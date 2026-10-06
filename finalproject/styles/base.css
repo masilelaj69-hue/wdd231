@@ -1,0 +1,341 @@
+:root {
+    --green: #1B5E20;
+    --gold: #D4A017;
+    --cream: #FFF8E7;
+    --white: #ffffff;
+    --dark: #222222;
+    --light-green: #eaf4ea;
+    --border: #d9d9d9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: var(--dark);
+    background-color: var(--cream);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2;
+    color: var(--green);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+a {
+    color: var(--green);
+}
+
+button,
+select {
+    font: inherit;
+}
+
+.site-header {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.logo {
+    color: var(--white);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.logo span {
+    color: var(--gold);
+}
+
+.menu-button {
+    border: 2px solid var(--white);
+    background: transparent;
+    color: var(--white);
+    padding: 0.35rem 0.6rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.navigation {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.75rem;
+    font-weight: 500;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    color: var(--gold);
+}
+
+.hero {
+    min-height: 480px;
+    display: grid;
+    place-items: center;
+    padding: 4rem 1.5rem;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("../images/south-africa.jpg") center / cover no-repeat;
+}
+
+.hero-content {
+    max-width: 750px;
+    text-align: center;
+    color: var(--white);
+}
+
+.hero h1 {
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+}
+
+.hero .eyebrow {
+    color: var(--gold);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 0.8rem 1.2rem;
+    border: 2px solid var(--green);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.hero .button {
+    background-color: var(--gold);
+    border-color: var(--gold);
+    color: var(--dark);
+}
+
+.secondary-button {
+    background-color: transparent;
+    border-color: var(--white);
+}
+
+.intro-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card h3 {
+    margin-top: 0.5rem;
+}
+
+.feature-card a {
+    font-weight: 700;
+}
+
+.destination-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.destination-card .button {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+select {
+    display: block;
+    width: min(100%, 400px);
+    margin: 1rem auto;
+    padding: 0.75rem;
+    border: 2px solid var(--green);
+    border-radius: 6px;
+    background-color: var(--white);
+}
+
+dialog {
+    width: min(90%, 600px);
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    padding: 2rem;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.site-footer {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 2.5rem 1.5rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-footer h2 {
+    color: var(--white);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.footer-links a {
+    color: var(--white);
+}
+
+.copyright {
+    margin-bottom: 0;
+}
+
+@media (min-width: 700px) {
+
+    .menu-button {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        width: auto;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        padding: 0.5rem 0.8rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .feature-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .intro-section {
+        padding: 4rem 2rem;
+    }
+}
+
