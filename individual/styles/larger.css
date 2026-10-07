@@ -1,0 +1,78 @@
+@media screen and (min-width: 700px) {
+    .header-container {
+        padding: 1rem 2rem;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        position: static;
+        background: transparent;
+        border: none;
+        padding: 0;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    .hero {
+        padding: 6rem 2rem;
+    }
+
+    .welcome,
+    .featured,
+    .page-header,
+    .content-section,
+    .form-section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .section-heading {
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+    }
+
+    .music-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filters {
+        grid-template-columns: 2fr 1fr;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .footer-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .music-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero-content {
+        padding-left: 2rem;
+    }
+
+    .welcome,
+    .featured,
+    .page-header,
+    .content-section,
+    .form-section {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}

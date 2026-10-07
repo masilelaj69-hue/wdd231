@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "artist": "Black Coffee",
+    "track": "Drive",
+    "genre": "Afro House",
+    "year": 2021,
+    "country": "South Africa",
+    "description": "A deep and atmospheric house track with Afro-inspired sounds."
+  },
+  {
+    "id": 2,
+    "artist": "Da Capo",
+    "track": "Found You",
+    "genre": "Afro House",
+    "year": 2020,
+    "country": "South Africa",
+    "description": "A melodic Afro House track with a smooth rhythmic sound."
+  },
+  {
+    "id": 3,
+    "artist": "Shimza",
+    "track": "Kunye",
+    "genre": "Afro Tech",
+    "year": 2021,
+    "country": "South Africa",
+    "description": "An energetic Afro Tech track built around driving rhythms."
+  },
+  {
+    "id": 4,
+    "artist": "Caiiro",
+    "track": "The Akan",
+    "genre": "Afro House",
+    "year": 2022,
+    "country": "South Africa",
+    "description": "A powerful Afro House production featuring rich African influences."
+  },
+  {
+    "id": 5,
+    "artist": "Zakes Bantwini",
+    "track": "Osama",
+    "genre": "House",
+    "year": 2021,
+    "country": "South Africa",
+    "description": "A popular South African house track with an uplifting sound."
+  },
+  {
+    "id": 6,
+    "artist": "DJ Maphorisa",
+    "track": "Midnight",
+    "genre": "House",
+    "year": 2022,
+    "country": "South Africa",
+    "description": "A modern house track combining electronic production with African rhythms."
+  },
+  {
+    "id": 7,
+    "artist": "Lebo Mathosa",
+    "track": "Dream",
+    "genre": "House",
+    "year": 2002,
+    "country": "South Africa",
+    "description": "A classic South African dance-inspired house selection."
+  },
+  {
+    "id": 8,
+    "artist": "Culoe De Song",
+    "track": "Webaba",
+    "genre": "Afro House",
+    "year": 2019,
+    "country": "South Africa",
+    "description": "A hypnotic house track driven by atmospheric percussion."
+  },
+  {
+    "id": 9,
+    "artist": "Euphonik",
+    "track": "Summer",
+    "genre": "Deep House",
+    "year": 2018,
+    "country": "South Africa",
+    "description": "A smooth deep house selection suited to relaxed listening."
+  },
+  {
+    "id": 10,
+    "artist": "Nora En Pure",
+    "track": "Come With Me",
+    "genre": "Deep House",
+    "year": 2019,
+    "country": "Switzerland",
+    "description": "A melodic deep house track with a bright and peaceful atmosphere."
+  },
+  {
+    "id": 11,
+    "artist": "Black Motion",
+    "track": "Rainbow",
+    "genre": "Afro House",
+    "year": 2020,
+    "country": "South Africa",
+    "description": "A rhythmic Afro House track blending electronic and traditional influences."
+  },
+  {
+    "id": 12,
+    "artist": "Themba",
+    "track": "Who Is Themba",
+    "genre": "Afro House",
+    "year": 2020,
+    "country": "South Africa",
+    "description": "A deep and energetic Afro House selection."
+  },
+  {
+    "id": 13,
+    "artist": "Louie Vega",
+    "track": "Dance",
+    "genre": "Soulful House",
+    "year": 2017,
+    "country": "United States",
+    "description": "A soulful house track built around groove and uplifting rhythms."
+  },
+  {
+    "id": 14,
+    "artist": "Honey Dijon",
+    "track": "Downtown",
+    "genre": "House",
+    "year": 2022,
+    "country": "United States",
+    "description": "A stylish house track influenced by classic club sounds."
+  },
+  {
+    "id": 15,
+    "artist": "Kerri Chandler",
+    "track": "Atmosphere",
+    "genre": "Deep House",
+    "year": 2016,
+    "country": "United States",
+    "description": "A deep house selection inspired by classic underground club music."
+  },
+  {
+    "id": 16,
+    "artist": "Black Coffee",
+    "track": "Turn Me On",
+    "genre": "Afro House",
+    "year": 2020,
+    "country": "South Africa",
+    "description": "A melodic electronic track with a strong Afro House influence."
+  }
+]

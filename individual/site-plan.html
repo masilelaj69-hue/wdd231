@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Site Plan | House Vibe</title>
+    <meta name="description" content="Site plan for the House Vibe individual website project.">
+    <meta name="author" content="Julia Masilela">
+
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a class="logo" href="index.html">
+                House<span>Vibe</span>
+            </a>
+
+            <button
+                id="menu-button"
+                class="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="navigation">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="favorites.html">Favorites</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <p class="eyebrow">Project Planning</p>
+
+            <h1>House Vibe Site Plan</h1>
+
+            <h2>Site Name</h2>
+            <p>
+                <strong>House Vibe</strong>
+            </p>
+
+            <p>
+                The name House Vibe represents the energy, rhythm,
+                and feeling of House music.
+            </p>
+
+            <h2>Site Purpose</h2>
+            <p>
+                House Vibe is a music discovery website where visitors
+                can explore House music artists, tracks, genres, and
+                countries. Visitors can search for music and save their
+                favorite selections.
+            </p>
+
+            <h2>Target Audience</h2>
+            <p>
+                The website is designed for people who enjoy House music
+                and want an easy way to discover different artists,
+                genres, and tracks.
+            </p>
+
+            <h2>Site Goals</h2>
+            <ul>
+                <li>Help visitors discover House music.</li>
+                <li>Display music information dynamically.</li>
+                <li>Allow visitors to search and filter music.</li>
+                <li>Allow visitors to save favorite music.</li>
+                <li>Provide a simple and responsive experience.</li>
+            </ul>
+
+            <h2>Color Scheme</h2>
+            <p>
+                The primary background color is dark charcoal
+                <strong>#111111</strong>.
+            </p>
+
+            <p>
+                The accent color is bright lime
+                <strong>#D9FF3F</strong>.
+            </p>
+
+            <p>
+                White is used for primary text and light gray is used
+                for supporting text.
+            </p>
+
+            <h2>Typography</h2>
+            <p>
+                The website uses Poppins for headings, navigation,
+                buttons, and body text.
+            </p>
+
+            <h2>Pages</h2>
+
+            <h3>Home</h3>
+            <p>
+                Introduces House Vibe and provides a call-to-action
+                leading visitors to the music collection.
+            </p>
+
+            <h3>Discover</h3>
+            <p>
+                Displays music data dynamically from a JSON file.
+                Visitors can search, filter by genre, view details,
+                and save favorites.
+            </p>
+
+            <h3>Favorites</h3>
+            <p>
+                Displays music saved by the visitor using localStorage.
+            </p>
+
+            <h2>Wireframe Description</h2>
+            <p>
+                On mobile devices, the navigation uses a hamburger
+                menu and content is displayed in a single column.
+                On larger screens, the navigation becomes horizontal
+                and music cards are displayed in multiple columns.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <a class="logo" href="index.html">
+                    House<span>Vibe</span>
+                </a>
+
+                <p>
+                    Discover music. Find your vibe.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="attributions.html">Attributions</a>
+                <a href="thankyou.html">Contact</a>
+            </div>
+        </div>
+
+        <p class="copyright">
+            © <span id="current-year"></span>
+            House Vibe | Julia Masilela
+        </p>
+    </footer>
+</body>
+</html>

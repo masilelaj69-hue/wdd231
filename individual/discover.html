@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discover | House Vibe</title>
+    <meta name="description" content="Explore House music, artists, genres, tracks, and sounds on House Vibe.">
+    <meta name="author" content="Julia Masilela">
+
+    <meta property="og:title" content="Discover | House Vibe">
+    <meta property="og:description" content="Explore House music, artists, genres, and tracks on House Vibe.">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/discover.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+
+        <a class="logo" href="index.html">
+            House<span>Vibe</span>
+        </a>
+
+        <button
+            id="menu-button"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a class="active" href="discover.html">Discover</a>
+            <a href="favorites.html">Favorites</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="page-header">
+
+        <p class="eyebrow">Find your sound</p>
+
+        <h1>Discover House Music</h1>
+
+        <p>
+            Explore artists, tracks, genres, and sounds
+            from the House music collection.
+        </p>
+
+    </section>
+
+    <section class="filters" aria-label="Music filters">
+
+        <div>
+            <label for="search">Search music</label>
+
+            <input
+                type="search"
+                id="search"
+                name="search"
+                placeholder="Search artist, track, genre, or country">
+        </div>
+
+        <div>
+            <label for="genre-filter">Filter by genre</label>
+
+            <select id="genre-filter" name="genre">
+                <option value="all">All genres</option>
+            </select>
+        </div>
+
+    </section>
+
+    <section class="content-section">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">The collection</p>
+
+                <h2>Explore the Vibe</h2>
+            </div>
+
+        </div>
+
+        <div
+            id="music-container"
+            class="music-grid"
+            aria-live="polite">
+
+            <p>Loading music...</p>
+
+        </div>
+
+    </section>
+
+    <div
+        id="music-modal"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-hidden="true">
+
+        <div
+            id="modal-content"
+            class="modal-content">
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <a class="logo" href="index.html">
+                House<span>Vibe</span>
+            </a>
+
+            <p>
+                Discover music. Find your vibe.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="attributions.html">
+                Attributions
+            </a>
+
+            <a href="thankyou.html">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+    <p class="copyright">
+
+        © <span id="current-year"></span>
+        House Vibe | Julia Masilela
+
+    </p>
+
+</footer>
+
+</body>
+</html>
+            

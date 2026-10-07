@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | House Vibe</title>
+    <meta name="description" content="Contact House Vibe and share your thoughts about House music.">
+    <meta name="author" content="Julia Masilela">
+
+    <meta property="og:title" content="Contact | House Vibe">
+    <meta property="og:description" content="Contact House Vibe and share your thoughts about House music.">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/form.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <a class="logo" href="index.html">
+                House<span>Vibe</span>
+            </a>
+
+            <button
+                id="menu-button"
+                class="menu-button"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="navigation">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="favorites.html">Favorites</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <p class="eyebrow">Get in touch</p>
+
+            <h1>Contact House Vibe</h1>
+
+            <p>
+                Tell us about your favorite House music,
+                artist, or genre.
+            </p>
+
+            <form action="thankyou.html" method="get">
+
+                <div>
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div>
+                    <label for="favorite">Favorite House artist</label>
+                    <input
+                        type="text"
+                        id="favorite"
+                        name="favorite"
+                        required>
+                </div>
+
+                <div>
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        required></textarea>
+                </div>
+
+                <button class="button" type="submit">
+                    Send Message
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <a class="logo" href="index.html">
+                    House<span>Vibe</span>
+                </
