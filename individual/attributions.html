@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Attributions | House Vibe</title>
+
     <meta name="description" content="Attributions and acknowledgements for the House Vibe website.">
     <meta name="author" content="Julia Masilela">
 
-    <meta property="og:title" content="Attributions | House Vibe">
-    <meta property="og:description" content="Attributions and acknowledgements for the House Vibe website.">
-    <meta property="og:type" content="website">
-
     <link rel="icon" href="images/favicon.svg">
+
+    <meta property="og:title" content="House Vibe Website Attributions">
+    <meta property="og:description" content="Sources and acknowledgements for images, fonts, and resources used on the House Vibe website.">
+    <meta property="og:image" content="https://masilelaj69-hue.github.io/wdd231/individual/images/hero.webp">
+    <meta property="og:url" content="https://masilelaj69-hue.github.io/wdd231/individual/attributions.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
@@ -20,42 +27,82 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <a class="logo" href="index.html">
-                House<span>Vibe</span>
-            </a>
 
-            <button
-                id="menu-button"
-                class="menu-button"
-                type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false">
-                ☰
-            </button>
+<header>
+    <div class="header-container">
+        <a class="logo" href="index.html">House<span>Vibe</span></a>
 
-            <nav id="navigation">
-                <a href="index.html">Home</a>
-                <a href="discover.html">Discover</a>
-                <a href="favorites.html">Favorites</a>
-            </nav>
+        <button
+            class="menu-button"
+            id="menu-button"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="navigation">
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="favorites.html">Favorites</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="page-header">
+        <p class="eyebrow">Sources</p>
+        <h1>Attributions</h1>
+        <p>
+            Sources and resources used to create the House Vibe website.
+        </p>
+    </section>
+
+    <section class="content-section">
+
+        <h2>Resources</h2>
+
+        <p>
+            Website content and music information were organized for
+            educational purposes as part of the WDD231 final project.
+        </p>
+
+        <p>
+            The website uses the Poppins font provided by Google Fonts.
+        </p>
+
+        <p>
+            The hero image was obtained from Pexels and is used as a
+            visual background for the website.
+        </p>
+
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div>
+            <p><strong>House Vibe</strong></p>
+            <p>Discover the sound. Feel the rhythm.</p>
         </div>
-    </header>
 
-    <main>
-        <section class="content-section">
-            <p class="eyebrow">Credits</p>
+        <div class="footer-links">
+            <a href="favorites.html">Favorites</a>
+            <a href="thankyou.html">Contact</a>
+            <a href="index.html">Home</a>
+        </div>
+    </div>
 
-            <h1>Attributions</h1>
+    <div class="copyright">
+        <p>
+            &copy; <span id="current-year"></span>
+            Julia Masilela | South Africa
+        </p>
+    </div>
+</footer>
 
-            <p>
-                House Vibe was created as an individual student website
-                project by Julia Masilela.
-            </p>
-
-            <h2>Content</h2>
-
-            <p>
-                The music information displayed on this website is
-                organized in
+</body>
+</html>
